@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla - Comparativa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Comparativa de Tecnologías Web</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Línea del Tiempo</a></li>
+            <li><a href="tabla.html">Tabla Comparativa</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Evolución de los Lenguajes</h2>
+        <table>
+            <caption>Comparación de tecnologías por época</caption>
+            <thead>
+                <tr>
+                    <th>Época</th>
+                    <th>Tecnología Principal</th>
+                    <th>Uso principal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1990s</td>
+                    <td>HTML estático</td>
+                    <td>Documentos de texto</td>
+                </tr>
+                <tr>
+                    <td>2000s</td>
+                    <td>AJAX / PHP</td>
+                    <td>Web dinámica e interactiva</td>
+                </tr>
+                <tr>
+                    <td>2010s</td>
+                    <td>Frameworks JS</td>
+                    <td>Single Page Applications (SPA)</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Fuente: Historia de la World Wide Web</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- NUEVA SECCIÓN: TABLA DE MENSAJES DE LA BD  -->
+        <hr style="margin-top: 40px;">
+        <h2>Mensajes de Contacto Recibidos</h2>
+        <p id="aviso-mensajes" style="color: gray; font-style: italic;">Cargando mensajes...</p>
+        <table id="tabla-mensajes" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Tema</th>
+                    <th>Mensaje</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-mensajes">
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

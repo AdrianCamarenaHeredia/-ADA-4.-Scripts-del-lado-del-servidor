@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Contacto</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Línea del Tiempo</a></li>
+            <li><a href="tabla.html">Tabla Comparativa</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Escríbenos</h2>
+        <p>Completa el formulario para enviarnos tus comentarios (los campos son validados con JS):</p>
+        
+        <form id="miFormulario">
+            <!-- Control 1: Texto -->
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <!-- Control 2: Email -->
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+
+            <!-- Control 3: Selector (Dropdown) -->
+            <label for="tema">Tema de interés:</label>
+            <select id="tema" name="tema">
+                <option value="">Selecciona un tema</option>
+                <option value="historia">Historia de la Web</option>
+                <option value="tecnologia">Tecnología Actual</option>
+            </select>
+
+            <!-- Control 4: Área de texto -->
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <!-- Control 5: Checkbox -->
+            <label>
+                <input type="checkbox" id="acepto" name="acepto"> Acepto los términos y condiciones
+            </label>
+
+            <button type="submit">Enviar Formulario</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
